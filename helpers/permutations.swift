@@ -1,5 +1,30 @@
 import Foundation
 
+/**
+ ``Core Functions:``
+
+ `arrangement(n:r:)` - Calculates nPr using the factorial formula
+ `arrangementIterative(n:r:)` - More efficient iterative implementation
+ `factorial(_:)` - Helper function for factorial calculation
+ `generateArrangements(_:r:)` - Generates all possible arrangements of r items from an array
+
+ ``Key Features:``
+
+ Input validation to handle edge cases
+ Two different calculation methods (factorial-based and iterative)
+ Generic function to generate actual arrangements from any array type
+ Comprehensive examples showing different use cases
+
+ ``Mathematical Formula:``
+ The arrangement formula is nPr = n! / (n-r)!, where:
+
+ n is the total number of items
+ r is the number of items being arranged
+ The result is the number of ways to arrange r items from n items where order matters
+
+ The iterative approach is more efficient for larger numbers as it avoids calculating full factorials when possible.
+ */
+
 // MARK: - Factorial Helper Function
 func factorial(_ n: Int) -> Int {
     guard n >= 0 else { return 0 }
